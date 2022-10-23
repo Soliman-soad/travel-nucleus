@@ -1,10 +1,18 @@
-import logo from './logo.svg';
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Main from './layout/Main';
 
 function App() {
+  const route = createBrowserRouter([
+    {
+      path:'/',
+      element:<Main/>
+    }
+  ])
   return (
-    <div className="App">
-      
+    <div >
+      <RouterProvider router={route}></RouterProvider>
     </div>
   );
 }
