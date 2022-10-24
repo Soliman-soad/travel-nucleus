@@ -4,43 +4,55 @@ const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 w-full  fixed top-0">
+        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 w-full  fixed top-0 text-white">
         <div className="relative flex items-center justify-between">
-          <div className="flex items-center">
+          <div className="flex items-center justify-evenly">
             <a
               href="/"
               aria-label="Company"
               title="Company"
               className="inline-flex items-center mr-8"
             >
-              <svg
-                className="w-8 text-deep-purple-accent-400"
-                viewBox="0 0 24 24"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                stroke="currentColor"
-                fill="none"
-              >
-                <rect x="3" y="1" width="7" height="12" />
-                <rect x="3" y="17" width="7" height="6" />
-                <rect x="14" y="1" width="7" height="6" />
-                <rect x="14" y="11" width="7" height="12" />
-              </svg>
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                Company
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+</svg>
+
+              <span className="ml-2 text-xl font-bold tracking-wide  uppercase">
+                Travel <br />
+                <span className='text-emerald-700'>
+                Nucleus
+                </span>
               </span>
             </a>
-            <ul className="flex items-center hidden space-x-8 lg:flex">
+            <ul className="flex items-center  w-full hidden space-x-8 lg:flex ml-80">
               <li>
                 <a
                   href="/"
                   aria-label="Our product"
                   title="Our product"
-                  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                  className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400 "
                 >
                   Product
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  aria-label="Our product"
+                  title="Our product"
+                  className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400 "
+                >
+                  Place
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  aria-label="Our product"
+                  title="Our product"
+                  className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400 "
+                >
+                  About
                 </a>
               </li>
               
@@ -52,7 +64,7 @@ const Nav = () => {
                 href="/"
                 aria-label="Sign in"
                 title="Sign in"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Sign in
               </a>
@@ -60,7 +72,17 @@ const Nav = () => {
             <li>
               <a
                 href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                aria-label="Sign in"
+                title="Sign in"
+                className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400"
+              >
+                Sign out
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide hover:bg-white hover:text-gray-800 text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
@@ -95,31 +117,23 @@ const Nav = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="/"
-                        aria-label="Company"
-                        title="Company"
-                        className="inline-flex items-center"
-                      >
-                        <svg
-                          className="w-8 text-deep-purple-accent-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
-                        </svg>
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
-                        </span>
-                      </a>
+                    <a
+              href="/"
+              aria-label="Company"
+              title="Company"
+              className="inline-flex items-center mr-8"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+</svg>
+
+              <span className="ml-2 text-xl font-bold tracking-wide  uppercase">
+                Travel <br />
+                <span className='text-emerald-700'>
+                Nucleus
+                </span>
+              </span>
+            </a>
                     </div>
                     <div>
                       <button
@@ -149,6 +163,26 @@ const Nav = () => {
                           Product
                         </a>
                       </li>
+                      <li>
+                        <a
+                          href="/"
+                          aria-label="Our product"
+                          title="Our product"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Place
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/"
+                          aria-label="Our product"
+                          title="Our product"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          About
+                        </a>
+                      </li>
                       
                       <li>
                         <a
@@ -158,6 +192,16 @@ const Nav = () => {
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Sign in
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/"
+                          aria-label="Sign in"
+                          title="Sign in"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Sign out
                         </a>
                       </li>
                       <li>
