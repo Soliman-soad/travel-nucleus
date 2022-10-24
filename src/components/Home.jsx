@@ -5,7 +5,6 @@ import { useLoaderData } from 'react-router-dom';
 const Home = () => {
     const placeData = useLoaderData()
     const[name,setName] =useState(1)
-    const [show,setShow] = useState(false);
     const currentPlace = placeData.find(place => place.id === name);
     const slide = document.getElementById('slider')
     const slideLeft = () => {
@@ -27,7 +26,7 @@ const Home = () => {
                 placeData.map(place => {
                     return(
                             <div key={place.id} className="m-2   ">
-                                <div onClick={()=>setName(place.id)} className="w-80 h-96 hover:border-4 ease-in duration-200 relative bg-cover rounded-lg bg-base-100 shadow-xl image-full" style={{backgroundImage: ` linear-gradient( rgba(0,0,0,.07), rgba(0,0,0,.5) ), url(${place.img_url})`}}>
+                                <div onClick={()=>setName(place.id)} className="w-80 h-96 hover:border-4 ease-in duration-100 relative bg-cover rounded-lg bg-base-100 shadow-xl image-full" style={{backgroundImage: ` linear-gradient( rgba(0,0,0,.07), rgba(0,0,0,.5) ), url(${place.img_url})`}}>
                                     <h4 className='absolute bottom-0 text-white font-bold text-xl mx-5 my-3'>{place.place}</h4>
                                 </div>
                             </div>

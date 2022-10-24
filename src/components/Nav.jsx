@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 w-full  fixed top-0 text-white">
+        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 w-full  fixed top-0 text-white ">
         <div className="relative flex items-center justify-between">
           <div className="flex items-center justify-evenly">
-            <a
-              href="/"
+            <Link
+              to="/"
               aria-label="Company"
               title="Company"
               className="inline-flex items-center mr-8"
@@ -23,7 +24,7 @@ const Nav = () => {
                 Nucleus
                 </span>
               </span>
-            </a>
+            </Link>
             <ul className="flex items-center  w-full hidden space-x-8 lg:flex ml-80">
               <li>
                 <a
@@ -36,14 +37,14 @@ const Nav = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="place"
                   aria-label="Our product"
                   title="Our product"
                   className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400 "
                 >
                   Place
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -117,8 +118,8 @@ const Nav = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                    <a
-              href="/"
+                    <Link
+              to="/"
               aria-label="Company"
               title="Company"
               className="inline-flex items-center mr-8"
@@ -133,7 +134,7 @@ const Nav = () => {
                 Nucleus
                 </span>
               </span>
-            </a>
+            </Link>
                     </div>
                     <div>
                       <button
@@ -164,14 +165,14 @@ const Nav = () => {
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="place"
                           aria-label="Our product"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Place
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a

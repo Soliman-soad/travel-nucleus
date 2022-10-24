@@ -3,6 +3,7 @@ import { Children } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
+import Place from './components/Place';
 import Main from './layout/Main';
 
 function App() {
@@ -14,6 +15,11 @@ function App() {
         {
           path:'/',
           element:<Home/>,
+          loader: () => fetch('http://localhost:5000/place')
+        },
+        {
+          path:'place',
+          element:<Place/>,
           loader: () => fetch('http://localhost:5000/place')
         }
       ]
